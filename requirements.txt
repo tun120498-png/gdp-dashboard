@@ -1,2 +1,7 @@
-streamlit
-pandas
+streamlit==1.50.0
+# Use the CPU-only wheel. The unconstrained torch dependency pulled by
+# openai-whisper otherwise installs the much larger CUDA-enabled distribution.
+--extra-index-url https://download.pytorch.org/whl/cpu
+torch==2.8.0+cpu
+openai-whisper==20250625
+srt==3.5.3

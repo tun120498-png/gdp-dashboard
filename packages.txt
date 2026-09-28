@@ -1,0 +1,4 @@
+ffmpeg
+fontconfig
+fonts-noto-core
+fonts-liberation
